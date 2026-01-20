@@ -12,7 +12,7 @@
 - 🏆 **多结局系统**：5种不同结局等你发现
 
 ## 🚀 快速开始
-1. 访问游戏：https://你的用户名.github.io/time-loop-game
+1. 访问游戏：https://[你的用户名.github.io/time-loop-game](https://rqgg9fnzhy-lab.github.io/galgame__JYT27/)
 2. 按空格键继续对话
 3. 数字键1-5选择选项
 
@@ -23,4 +23,5 @@
 
 # 方法2：使用Python
 python -m http.server 8000
+
 # 然后访问 http://localhost:8000
