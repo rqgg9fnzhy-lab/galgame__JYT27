@@ -1,4 +1,10 @@
 // 游戏主程序
+// 导入游戏数据类
+import { GameData } from './game/GameData.js';
+// 导入游戏核心类
+import { GameCore } from './game/GameCore.js';
+// 导入UI管理器类
+import { UIManager } from './game/UIManager.js';
 class TimeLoopGame {
     constructor() {
         this.app = null;
@@ -182,4 +188,5 @@ window.addEventListener('DOMContentLoaded', () => {
             game.gameData.save();
         }
     });
+
 });
