@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二十七班的时间循环</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <!-- 游戏Canvas将由Pixi.js自动创建 -->
+    </div>
+    
+    <!-- 姓名输入模态框 -->
+    <div id="name-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>请输入你的名字</h2>
+            <input type="text" id="player-name" placeholder="请输入2-10个字符" maxlength="10">
+            <div class="modal-buttons">
+                <button id="confirm-name">确认</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 性别选择模态框 -->
+    <div id="gender-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>选择你的身份</h2>
+            <div class="gender-options">
+                <button class="gender-btn" data-gender="male">男生</button>
+                <button class="gender-btn" data-gender="female">女生</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 加载遮罩 -->
+    <div id="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div id="loading-text">加载中...</div>
+        </div>
+    </div>
+
+    <!-- 键盘提示 -->
+    <div id="keyboard-hint">
+        <span>空格/回车: 继续 | 数字键1-5: 选择选项</span>
+    </div>
+
+    <script src="js/game/GameData.js"></script>
+    <script src="js/game/Dialogue.js"></script>
+    <script src="js/game/GameCore.js"></script>
+    <script src="js/game/UIManager.js"></script>
+    <script src="js/scenes/TitleScene.js"></script>
+    <script src="js/scenes/GameScene.js"></script>
+    <script src="js/scenes/EndingScene.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
